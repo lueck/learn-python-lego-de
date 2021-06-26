@@ -1,6 +1,6 @@
 # Einstieg in die Python-Programmierung für Lego-Roboter ganz easy #
 
-```
+```{python}
 from pyboost.fahrzeug import *
 
 fahrzeug = Einachser()
