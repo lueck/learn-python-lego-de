@@ -1,4 +1,4 @@
-# Einstieg in die Python-Programmierung für Lego-Roboter ganz easy #
+# Einstieg in die Python-Programmierung mit Lego-Robotern ganz easy #
 
 ```{python}
 from pyboost.fahrzeug import *
