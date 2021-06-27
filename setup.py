@@ -24,8 +24,6 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.5",
     install_requires = [
-        "wheel",
-        "setuptools",
         "pylgbst==1.2.0"
         ],
     # entry_points = {
