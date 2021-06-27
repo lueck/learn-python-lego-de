@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyboost-vehicles",
+    name="learn-python-lego-de",
     version="0.0.1",
     author="Christian Lück",
     author_email="clueck@wwu.de",
-    description="Classes flattening the learning curve for python starters playing with lego boost",
+    description="Flattening the learning curve for python starters playing with lego boost",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/lueck/pyboost-vehicles",
+    url="https://github.com/lueck/learn-python-lego-de",
     project_urls={
-        "Bug Tracker": "https://github.com/lueck/pyboost-vehicles/issues",
+        "Bug Tracker": "https://github.com/lueck/learn-python-lego-de/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
