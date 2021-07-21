@@ -1,4 +1,4 @@
-from pylgbst.hub import MoveHub
+from pylgbst.hub import MoveHub, VisionSensor
 
 
 LINKS = 1    # gegen den Uhrzeugersinn (mathematisch positive Drehung)
@@ -20,7 +20,15 @@ class Einachser(MoveHub):
         self.rad_durchmesser = rad
         self.uebersetzung = uebersetzung
         self.spurweite = spurweite
+        self.distanz = None
+        self.farbe = None
         super(Einachser, self).__init__(*args, **kwargs)
+        self.vision_sensor.subscribe(self.sieh, mode=VisionSensor.COLOR_DISTANCE_FLOAT)
+
+    def sieh(self, farbe, distanz):
+        """Callback-Funktion fuer den Sichtsensor"""
+        self.farbe = farbe
+        self.distanz = distanz
 
     def ende(self):
         """Stelle das Fahrzeug ab."""
